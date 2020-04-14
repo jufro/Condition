@@ -2,8 +2,8 @@ package ru.netology;
 
 public class Condition {
     private String name;
-    private int maxTemperature;
-    private int minTemperature;
+    private int maxTemperature = 35;
+    private int minTemperature = 15;
     private int currentTemperature;
     private boolean on;
 
@@ -62,25 +62,19 @@ public class Condition {
         this.on = on;
     }
 
-    public void increaseCurrentTemperature(int currentTemperature) {
-        if (currentTemperature >= maxTemperature) {
+    public void increaseCurrentTemperature() {
+        if (currentTemperature == maxTemperature) {
             return;
         }
-        if (currentTemperature <= minTemperature) {
-            return;
-        }
-            this.currentTemperature = currentTemperature + 1;
+            currentTemperature ++;
     }
 
 
-    public void decreaseCurrentTemperature(int currentTemperature) {
-        if (currentTemperature >= maxTemperature) {
+    public void decreaseCurrentTemperature() {
+        if (currentTemperature == minTemperature) {
             return;
         }
-        if (currentTemperature <= minTemperature) {
-            return;
-        }
-        this.currentTemperature = currentTemperature - 1;
+        currentTemperature --;
     }
 }
 
