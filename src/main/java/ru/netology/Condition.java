@@ -5,7 +5,7 @@ public class Condition {
     private int maxTemperature = 35;
     private int minTemperature = 15;
     private int currentTemperature;
-    private boolean on;
+    private boolean on = true;
 
     public String getName() {
         return name;
@@ -42,17 +42,9 @@ public class Condition {
         if (currentTemperature < minTemperature) {
             return;
         }
-        // здесь уверены, что все проверки прошли
         this.currentTemperature = currentTemperature;
     }
 
-//    public void setCurrentTemperature(int currentTemperature) {
-//        if (currentTemperature <= maxTemperature) {
-//            if (currentTemperature >= minTemperature) {
-//                this.currentTemperature = currentTemperature;
-//            }
-//        }
-//    }
 
     public boolean isOn() {
         return on;

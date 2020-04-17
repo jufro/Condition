@@ -7,6 +7,7 @@ public class Radio {
     private int maxVolume = 10;
     private int minStation = 0;
     private int minVolume = 0;
+    private boolean on = true;
 
     public int getMinStation() {
 
@@ -108,6 +109,14 @@ public class Radio {
             return;
         }
         volume--;
+    }
+
+    public boolean isOn() {
+        return on;
+    }
+
+    public void setOn(boolean on) {
+        this.on = on;
     }
 }
 
