@@ -88,7 +88,7 @@ class RadioTest {
     @Test
     void ShouldSetVolume() {
         Radio radio = new Radio();
-        radio.setVolume(10);
-        assertEquals(10, radio.getVolume());
+        radio.setVolume(0);
+        assertEquals(0, radio.getVolume());
     }
 }

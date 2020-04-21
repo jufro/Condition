@@ -10,10 +10,10 @@ class ConditionTest {
     public void shouldIncreaseCurrentTemperature() {
         Condition condition = new Condition();
 
-        condition.setCurrentTemperature(20);
+        condition.setCurrentTemperature(35);
         condition.increaseCurrentTemperature();
 
-        assertEquals(21, condition.getCurrentTemperature());
+        assertEquals(35, condition.getCurrentTemperature());
     }
 
 
