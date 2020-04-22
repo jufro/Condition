@@ -8,7 +8,7 @@ class RadioTest {
 
     @Test
     void ShouldIncreaseCurrentStation() {
-        Radio radio = new Radio(5, 9);
+        Radio radio = new Radio(5,9);
         radio.increaseCurrentStation();
         assertEquals(6, radio.getCurrentStation());
     }
@@ -16,7 +16,7 @@ class RadioTest {
 
     @Test
     void ShouldIncreaseCurrentStationFromMax() {
-        Radio radio = new Radio(9, 9);
+        Radio radio = new Radio(9,9);
         radio.increaseCurrentStation();
         assertEquals(0, radio.getCurrentStation());
     }
