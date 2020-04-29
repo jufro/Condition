@@ -22,37 +22,30 @@ public class Radio {
     }
 
     public int getMinStation() {
-
         return minStation;
     }
 
     public void setMinStation(int minStation) {
-
         this.minStation = minStation;
     }
 
     public int getMinVolume() {
-
         return minVolume;
     }
 
     public void setMinVolume(int minVolume) {
-
         this.minVolume = minVolume;
     }
 
     public int getMaxStation() {
-
         return minStation;
     }
 
     public void setMaxStation(int maxStation) {
-
         this.maxStation = maxStation;
     }
 
     public int getMaxVolume() {
-
         return maxVolume;
     }
 
@@ -61,7 +54,6 @@ public class Radio {
     }
 
     public int getCurrentStation() {
-
         return currentStation;
     }
 
